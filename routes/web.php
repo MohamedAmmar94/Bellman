@@ -16,7 +16,10 @@ Route::get('/', 'Auth\LoginController@showLoginForm');
 Route::post('login', 'Auth\LoginController@login')->name('auth.login');
 Route::post('logout', 'Auth\LoginController@logout')->name('auth.logout');
 
-
+Route::get('locale/{locale}', function ($locale){
+    Session::put('locale', $locale);
+    return redirect()->back();
+});
 
 Auth::routes();
 

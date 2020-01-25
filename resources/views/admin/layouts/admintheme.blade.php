@@ -1,5 +1,5 @@
  <!doctype html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
   <head>
   
   
@@ -8,6 +8,7 @@
   
   </head>
   <body>
+	
   @include('admin.partials.leftsidebar')
 
   <div class="all-content-wrapper">

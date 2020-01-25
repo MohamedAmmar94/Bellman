@@ -11,28 +11,28 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				
 				<div class="form-group">
-					<label> First Name : </label>
+					<label>  {{ __('messages.First_Name') }} : </label>
 					<input type="text" name="first_name" value="<?php if(!empty($employee)){ echo $employee->first_name;}?> " class="form-control" required>
 					
 				</div>
 				<div class="form-group">
-					<label> Last Name : </label>
+					<label> {{ __('messages.last_Name') }} : </label>
 					<input type="text" name="last_name" value="<?php if(!empty($employee)){ echo $employee->last_name;}?> " class="form-control" required>
 					
 				</div>
 				<div class="form-group">
-					<label> Email : </label>
+					<label> {{ __('messages.Email') }} : </label>
 					<input type="email" name="email" value="<?php if(!empty($employee)){echo $employee->email ;}?>" class="form-control" >
 					
 				</div>
 				
 				<div class="form-group">
-					<label> phone : </label>
+					<label> {{ __('messages.phone') }} : </label>
 					<input type="number" name="phone" value="<?php if(!empty($employee)){echo $employee->phone; }?>" class="form-control" >
 					
 				</div>
 				<div class="form-group">
-					<label> Company : </label>
+					<label> {{ __('messages.company') }} : </label>
 						<select name="company" class="form-control" style="margin:0px;" >
 							<option value="0" >-- Select Company --</option>
 							<?php if(isset($companies) && count($companies)>0){
@@ -49,7 +49,7 @@
 				<div class="payment-adress">
 				<input name="employee_id" value="<?php if(!empty($employee)){ echo $employee->id ;}else{echo "new";}?>" type="hidden" required>
 					<button type="submit" class="btn btn-primary waves-effect waves-light" style="margin: 0px 0px 82px 0px;    background: #8a6d3b;
-					border-color: #c8a07f;" id="btnSubmit">Submit</button>
+					border-color: #c8a07f;" id="btnSubmit">{{ __('messages.Submit') }} </button>
 				</div>
 			</div>
 		</div>	

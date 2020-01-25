@@ -1,6 +1,10 @@
 <!-- Start Welcome area -->
    
-       
+      <style>
+	  .navbar-nav {
+    	flex-direction: row !important;
+	  }
+	  </style> 
         <div class="header-advance-area" >
             <div class="header-top-area" >
                 <div class="container-fluid" >
@@ -48,6 +52,14 @@
                                                         </li>
                                                     </ul>
                                                 </li>
+												<li class="nav-item">
+                                                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{asset('images/'.app()->getLocale().'.png')}}" style="width:25px;height:25px;"> {{ app()->getLocale() }}</a>
+                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                        <li><a href="{{ url('locale/en') }}" ><img src="{{asset('images/en.png')}}" style="width:25px;height:25px;margin: 0 15px;"> EN</a></li>
+														<li><a href="{{ url('locale/ar') }}" ><img src="{{asset('images/ar.png')}}" style="width:25px;height:25px;margin: 0 15px;"> AR</a></li>
+                                                    </ul>
+                                                </li>
+												
                                               </ul>
                                         </div>
                                     </div>

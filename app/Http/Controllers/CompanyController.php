@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Company;
+use App\User;
+use App\Notifications\CompanyListner;
 use Validator;
 use Auth;
 use Illuminate\Http\Request;
@@ -117,6 +119,8 @@ class CompanyController extends Controller
 					
 				}
 				$company->save();
+				$user=User::first();
+				$user->notify(new CompanyListner($company));
 				$msg="Company Added successful";
 		}elseif(!empty($request)){
 			//dd("edit");

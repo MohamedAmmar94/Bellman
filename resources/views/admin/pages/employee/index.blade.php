@@ -14,8 +14,8 @@
 
 @section('breadcrumb')
 	 
-	<li class="active breadcrumb-item">Admin</li>
-    <li class="active breadcrumb-item" aria-current="page">Employee </li>
+	<li class="active breadcrumb-item">{{ __('messages.Admin') }}	</li>
+    <li class="active breadcrumb-item" aria-current="page">{{ __('messages.Employees') }} </li>
 
 
 @endsection
@@ -45,7 +45,7 @@
 @section('createbutton')
 
 <button type="button"  class="btn btn-primary waves-effect waves-light" data-toggle="modal" data-target=".editemployee"
- onclick="employeefunction('new')"	>Add New Company</button>
+ onclick="employeefunction('new')"	>{{ __('messages.ِAdd_New') }} {{ __('messages.Employee') }}</button>
 
 @endsection
            
@@ -56,12 +56,12 @@
 
 
 	<tr>
-		<th class="filter-text" >Id				</th>
-		<th class="filter-text" >Name			</th>
-		<th class="filter-text" > Email			</th>
-		<th class="filter-text" > phone			</th>
-		<th class="filter-text" > Company			</th>
-		<th class="filter-text" >Action		</th>
+		<th class="filter-text" > Id				</th>
+		<th class="filter-text" >{{ __('messages.Name') }}			</th>
+		<th class="filter-text" >{{ __('messages.Email') }} 			</th>
+		<th class="filter-text" >{{ __('messages.phone') }} 			</th>
+		<th class="filter-text" > {{ __('messages.Company') }}			</th>
+		<th class="filter-text" >{{ __('messages.Action') }} 		</th>
 		
 
 	</tr>  

@@ -65,6 +65,14 @@
 		============================================ -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@latest/dist/leaflet.css" />
     <link rel="stylesheet" href="{{asset('admintmpl/css/Control.Geocoder.css')}}" />
+	<!-- AR Direction ---->
+	<?php 
+			if(app()->getLocale()=="ar"){
+				?>
+				  <link rel="stylesheet" href='{{asset("admintmpl/css/arabic_dir.css")}}'>
+				<?php
+			}
+	?>
 
     <script src="https://unpkg.com/leaflet@latest/dist/leaflet-src.js"></script>
     <script src="{{asset('admintmpl/js/Control.Geocoder.js')}}"></script>

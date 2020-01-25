@@ -110,7 +110,7 @@ table.dataTable tr th.select-checkbox.selected::after {
 						<div class="col-md-6">
 						
 						</div>
-						<div class="col-md-6 text-right">
+						<div class="col-md-6 <?php if(app()->getLocale()=="ar"){echo 'text-left';}else{echo 'text-right';} ?>">
 							@yield('createbutton')
 						</div>
    
@@ -119,7 +119,7 @@ table.dataTable tr th.select-checkbox.selected::after {
 					   <div class="clearfix">
 						  <div class="js-stools-container-bar">
 							 <label for="filter_search" class="element-invisible">
-							 Search					</label>
+							 {{ __('messages.Search') }}					</label>
 							 <div class="btn-wrapper input-append">
 								<input type="text" name="filter[search]" class="filter_search" id="filter_search"  value=""      placeholder="Search"         />
 								<button type="button" class="btn hasTooltip" title="Search" aria-label="Search">
@@ -128,12 +128,12 @@ table.dataTable tr th.select-checkbox.selected::after {
 							 </div>
 							 <div class="btn-wrapper hidden-phone">
 								<button type="button" data-toggle="collapse" href=".js-stools-users-filters" class="btn hasTooltip js-stools-btn-filter" title="Filter the list items.">
-								Search Tools <span class="caret"></span>
+								  {{ __('messages.Search_Tools') }} <span class="caret"></span>
 								</button>
 							 </div>
 							 <div class="btn-wrapper">
 								<button type="button" class="btn hasTooltip js-stools-btn-clear" title="Clear">
-								Clear			</button>
+								 {{ __('messages.Clear') }}			</button>
 							 </div>
 						  </div>
 					   </div>

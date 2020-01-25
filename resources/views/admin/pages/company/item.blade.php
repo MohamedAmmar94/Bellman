@@ -11,12 +11,12 @@
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				
 				<div class="form-group">
-					<label> Name : </label>
+					<label> {{ __('messages.Name') }}  : </label>
 					<input type="text" name="name" value="<?php if(!empty($company)){ echo $company->name;}?> " class="form-control" required>
 					
 				</div>
 				<div class="form-group">
-					<label> Email : </label>
+					<label> {{ __('messages.Email') }}  : </label>
 					<input type="email" name="email" value="<?php if(!empty($company)){echo $company->email ;}?>" class="form-control" >
 					
 				</div>
@@ -32,13 +32,13 @@
 				<div class="form-group" style="    margin: 24px 0px;
 ">
 					<label>
-						Images
+						{{ __('messages.Logo') }} 
 					</label>
 					<input name="logo" type="file" class="form-control" accept="image/*" id="company-logo"  >
 					<label id="logo-alert"> Logo width and height must be at least 100 px   </label>
 				</div>
 				<div class="form-group">
-					<label> Website : </label>
+					<label> {{ __('messages.Website') }}  : </label>
 					<input type="text" name="website" value="<?php if(!empty($company)){echo $company->website; }?>" class="form-control" >
 					
 				</div>
@@ -50,7 +50,7 @@
 				<div class="payment-adress">
 				<input name="company_id" value="<?php if(!empty($company)){ echo $company->id ;}else{echo "new";}?>" type="hidden" required>
 					<button type="submit" class="btn btn-primary waves-effect waves-light" style="margin: 0px 0px 82px 0px;    background: #8a6d3b;
-					border-color: #c8a07f;" id="btnSubmit">Submit</button>
+					border-color: #c8a07f;" id="btnSubmit">{{ __('messages.Submit') }} </button>
 				</div>
 			</div>
 		</div>	

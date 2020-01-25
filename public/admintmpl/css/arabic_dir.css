@@ -1,0 +1,27 @@
+ body{
+	 direction:rtl;
+	 text-align: right!important;
+ }
+ .all-content-wrapper {
+    margin-right: 200px;
+	margin-left:0px !important;
+ }
+ .header-top-area {
+     right: 200px;
+    left: 0;
+ }
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+    float: right !important;
+}
+.header-right-info .navbar-nav {
+	float: left !important;
+}
+.breadcrumb {
+    direction: ltr!important;
+}
+.js-stools .js-stools-container-bar {
+    float: right !important;
+}
+.close{
+	display:none;
+}

@@ -17,16 +17,16 @@ $url=$_SERVER['REQUEST_URI'];
 							<li class="<?php if(strpos($url,"home")!==false){echo " active" ;}else{echo "";} ?>">
 								<a  href="/admin/home">
 									 <i class="fas fa-building"></i>
-									   <span class="mini-click-non">Companies </span>
+									   <span class="mini-click-non">{{ __('messages.Companies') }} </span>
 									</a>
 								
 							</li>
 						  <li class="<?php if(strpos($url,"employee")!==false){echo " active" ;}else{echo "";} ?>">
-                            <a  href="/admin/employee" aria-expanded="false"><i class="fas fa-users"></i><span class="mini-click-non"> Employees</span></a>
+                            <a  href="/admin/employee" aria-expanded="false"><i class="fas fa-users"></i><span class="mini-click-non"> {{ __('messages.Employees') }} </span></a>
                             
 						  </li>
 						  <li class="<?php if(strpos($url,"users")!==false){echo " active" ;}else{echo "";} ?>">
-                            <a  href="/admin/users" aria-expanded="false"><i class="fas fa-users-cog"></i><span class="mini-click-non"> Users</span></a>
+                            <a  href="/admin/users" aria-expanded="false"><i class="fas fa-users-cog"></i><span class="mini-click-non"> {{ __('messages.Users') }} </span></a>
                             
 						  </li>
 						
